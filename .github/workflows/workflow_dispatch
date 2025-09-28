@@ -1,3 +1,12 @@
 name: CI
 on:
   workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Say Hello
+        run: echo "Hello World"
